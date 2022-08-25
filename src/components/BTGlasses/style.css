@@ -1,0 +1,28 @@
+.carousel {
+    background-image: url(../../../public/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    position: relative;
+}
+
+.model {
+    position: relative;
+    width: 300px;
+}
+
+.glass {
+    position: absolute;
+    width: 160px;
+    top: 95px;
+    opacity: 0.8;
+}
+
+.col-2 {
+    align-self: center;
+}
+
+.col-2 img {
+    width: 100px;
+}
