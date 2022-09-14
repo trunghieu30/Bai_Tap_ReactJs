@@ -8,9 +8,8 @@ function App() {
         <div className="App">
             {/* Bài LayOut */}
             {/* <Home /> */}
-            {/* Bài kính */}
-            <BTThuKinh />
-            {/* <ShoesShop /> */}
+            {/* <BTThuKinh /> */}
+            <ShoesShop />
         </div>
     )
 }
