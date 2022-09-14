@@ -1,6 +1,7 @@
 
 import BTThuKinh from "./components/BTGlasses/BTThuKinh"
 import Home from "./components/BTLayout/Home"
+import ShoesShop from "./components/BTShoeShop/ShoesShop"
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             {/* <Home /> */}
             {/* Bài kính */}
             <BTThuKinh />
+            {/* <ShoesShop /> */}
         </div>
     )
 }

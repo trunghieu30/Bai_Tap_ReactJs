@@ -3,12 +3,24 @@ import data from "./dataGlasses.json"
 import "./style.css"
 export default class BTThuKinh extends Component {
     state = {
-        srcImg: './img/v1.png'
+        srcImg: './img/v1.png',
+        dataGlass: {
+            id: 1,
+            price: "30",
+            name: "GUCCI G8850U",
+            url: "./glassesImage/v1.png",
+            desc: "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
+        }
     }
 
     onChangeGlass = (colorGlass) => {
         this.setState({
             srcImg: `./img/v${colorGlass}.png`
+        })
+    }
+    infoGlass = (glass) => {
+        this.setState({
+            glassInfo: glass,
         })
     }
     render() {
@@ -19,6 +31,12 @@ export default class BTThuKinh extends Component {
                     <div className='model d-flex justify-content-center mb-3'>
                         <img src="./img/model.jpg" alt="" className='model' />
                         <img src={this.state.srcImg} alt="" className='glass' />
+                        <div className='glassInfo'>
+
+                        </div>
+                    </div>
+                    <div>
+
                     </div>
                     <div className='row'>
                         <div className='col-2' onClick={() => this.onChangeGlass('1')}>
